@@ -24,16 +24,34 @@ class EnhancedBlog {
     // Sample posts data - in a real app, this would come from an API or JSON file
     loadPosts() {
         this.posts = [
-            {
-                id: 1,
-                title: "The Art of Digital Minimalism",
-                excerpt: "In an age of constant connectivity, finding balance between technology and human experience has become essential...",
-                content: `<p>The digital age has brought unprecedented convenience and connectivity...</p>`,
-                category: "mindfulness",
-                date: "2024-01-15",
-                wordCount: 450,
-                readTime: 3
-            },
+    {
+        id: 1,
+        title: "Murakkab foiz va hayotdagi compound interest kuchi",
+        excerpt: "Murakkab foiz (compound interest) — uzoq muddatli, doimiy harakat natijasida yuzaga keladigan geometrik o‘sish kuchi haqida.",
+        content: `
+<p>“Murakkab foiz — bu dunyoning sakkizinchi mo‘jizasi. Uni tushungan odam — daromad qiladi, tushunmagan esa — to‘laydi” deydi Albert Eynshteyn.</p>
+<p>Compound interest (murakkab foizlar), bu qachon siz bir harakatni doimiy qilasiz va u ustma ust o'sib bo'radi, buni geometrik o'sish desa ham bo'ladi. Oddiy o'sish quydagicha bo'ladi: 1, 2, 3, 4, 5 ... va o'sish arifmetic o'sish deyiladi. Compound o'sishi esa 1, 2, 4, 8, 16 ... , ya'ni ko'proq foyda ustiga foyda.  Agar ikkalasi doimiy holda o'sib borsa, compound interest yuqori natija ko'rsatadi. Natijasi faqat doimiy takrorlanganda ko'rinadi.</p>
+<p>Shunga o'xshab bizning ba'zi bir compound interest ga ega bo'lgan ishlarimiz bor, agar compound interstni yaxshilab tushunib uni amalda doimiy qo'llasak, juda ham kuchli natijalarga olib keladi.</p>
+<p><b>Compound interest ga ega bo'lagan harakatlar;</b></p>
+<p><b>O'rganish</b></p>
+<p>Agar inson doimiy o'raganib borarar ekan, uning bilimi plyus "+" kabi qo'shilmaydi, balki karra kabi ko'payadi. Va qachon u bir narsani o'rgansa, qolgan 10 ta narsaga ham aql yetib qoladi. Natijada qaysi sohani odammi bo'lmasin, u bilan soatlab suhbat qura oladi, chunki unda compundlashgan bilim bor. Lekin inson bunda to'xtab qolmasligi kerak, chunki to'tasa pastga qulaydi. Naval Ravikant aytadi: “Agar siz o‘rganmayotgan bo‘lsangiz, demak, yemirilyapsiz.”</p>
+<p><b>Odatlar</b></p>
+<p>Hozir qilayotgan xar bir ishimiz, kelajakdagi bizdan dalolat beradi. Siz nima qilsangiz, siz o'sha siz (you are what you do). Atomic Habits kitobida keltiriladi: “Maqsadingiz qanchalik yuksak bo‘lmasin, siz baribir o‘zingiz yaratgan odatlar va tizimlar darajasida harakat qilasiz.” Agar bizning yomon odatlar doimiy qilinib kelinarkan, hozir natija bermas, lekin 5-10 yilda o'g'rig'i seziladi. Lekin agar kunda oz bolsa ham 10 bet kitob, 10 daqiqa yozish, 20 daqiqa shug'ullanish, 5$ saqlab qo'yish, 5 ta so'z yodlash, 1 yilda natija korinishni boshlaydi, agar 3-5, mayli deylik 10 yil davom etsa, siz shunchaki ajralib chiqishni boshlaysiz. Bu esa boshqalar erishmagan natijalarga olib keladi. Suv tomib-tomib toshni yoradi dermidi?</p>
+<p><b>Investitsiya</b></p>
+<p>Ko'pchilik investitsiya deganda faqat treyding yokida kriptani tushunadi. Ha bu ham compound lekin natija kafolatlanmagan, shunchaki 50/50. Biz esa o'ziga ivestitsiya qilish haqida gaplashamiz. Siz investitsiyani, pullik kurslarga, til o'rganishga, qimmat kitoblarga, book clublarga, networking meetinglarga, sog'ligingizga, biznesga (biznes ham 50/50, yeqilsez, kamida tajriba bilan chiqasiz, baribir foyda), va kerakli resurlarga. Bu investitsiya shunaqa natijasini beradiki, shunchaki sizi hali hayolizga kelmagan bo'ladi.</p>
+<p><b>Munosabatlarda</b></p>
+<p>Har inson bilan qilayotgan muomalamiz, o'z natijasini ko'rsatmay qolmaydi. Siz qo'lizdan kelgancha odamlarga yordam berasiz, tabassum qilasiz va qo'llab quvatlaysiz. Kuni kelib, sizni bir ishingizni hal qilish kerak bo'lib qoladi, sizga tekin ga hizmat ko'rsatishadi, ish taklif qilib qolishadi va umuman hayolizga kelmagan imkoniyatlar va yo'llar ochila bohslaydi (buni serendipity deydi). Bir akamizi bilaman, pulsiz biznes boshlagan, sababi networkingi kuchli bo'lgan. Lekin networking munosabatlarimiz orqali quriladi. Netwokingni darajasi va sifati ham bor, shuni unutmaslik kerark.</p>
+<p><b>Yozish</b></p>
+<p>Qisqacha, yozish fikrni tiniq qiladi, doimiy yozib yurgan odam fikrini og'zakida ravon yetqazadi, va aniq fikrlaydi. Yozish sog'liqqa ham foyda, stressdan olib chiqadi, tinchlantiradi, imunitetni yaxshilaydi va qon bosimini meyorida saqlaydi. Doimiy yozib yurgan odamning, xotirasi kuchli bo'ladi va yozgan bilimi miyyasiga taturovka bo'lib qoladi (writing is a tatoo on your brain). Qisqacha deb, ancha yozvordim a?</p>
+<p><b>Xulosa</b></p>
+<p>Compund interest odamni muvofaqqiyatga yetaklovchi asosiy omil hisoblanadi. Busiz umuman iloji yo'q. “Allohga eng mahbub amal — oz bo‘lsa ham, doimiy qilinadigan amal.” (Imom Buxoriy va Muslim rivoyati).</p>
+        `,
+        category: "self-improvement",
+        date: "2025-07-29",
+        wordCount: 640,
+        readTime: 5
+    }
+];
             {
                 id: 2,
                 title: "Creativity in the Age of Algorithms",
