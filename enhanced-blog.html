@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Blog - Essays & Thoughts</title>
+    <meta name="description" content="A minimal blog for essays and contemplative writing with a clean, distraction-free design.">
+    <meta name="keywords" content="essays, philosophy, writing, minimal blog, contemplation">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Minimal Blog - Essays & Thoughts">
+    <meta property="og:description" content="A minimal blog for essays and contemplative writing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Minimal Blog - Essays & Thoughts">
+    <meta name="twitter:description" content="A minimal blog for essays and contemplative writing.">
+    <link rel="stylesheet" href="enhanced-blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="blog-title">Essays</h1>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search essays..." aria-label="Search essays">
+                <button class="search-clear" id="searchClear" aria-label="Clear search" style="display: none;">×</button>
+            </div>
+
+            <!-- Posts Navigation -->
+            <nav class="sidebar-nav">
+                <h3 class="nav-title">Posts</h3>
+                <ul class="nav-list" id="categoryList">
+  <li><a href="#" class="nav-link" data-title="The Art of Digital Minimalism">The Art of Digital Minimalism</a></li>
+  <li><a href="#" class="nav-link" data-title="Creativity in the Age of Algorithms">Creativity in the Age of Algorithms</a></li>
+  <li><a href="#" class="nav-link" data-title="The Philosophy of Slow Technology">The Philosophy of Slow Technology</a></li>
+  <li><a href="#" class="nav-link" data-title="Writing as a Form of Thinking">Writing as a Form of Thinking</a></li>
+  <li><a href="#" class="nav-link" data-title="The Power of Perspective">The Power of Perspective</a></li>
+  <li><a href="#" class="nav-link" data-title="Reflection as a Daily Practice">Reflection as a Daily Practice</a></li>
+  <li><a href="#" class="nav-link" data-title="How to Think Clearly">How to Think Clearly</a></li>
+  <li><a href="#" class="nav-link" data-title="Your Post Title Here">Your Post Title Here</a></li>
+</ul>
+
+
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Posts List View -->
+            <div class="posts-container" id="postsContainer">
+                <div class="posts-header">
+                    <h2 class="posts-title">Recent Essays</h2>
+                    <div class="posts-meta">
+                        <span id="postsCount">0 posts</span>
+                        <span id="filterInfo"></span>
+                    </div>
+                </div>
+                
+                <div class="posts-grid" id="postsGrid">
+                    <!-- Posts will be dynamically inserted here -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination" id="pagination" style="display: none;">
+                    <button class="pagination-btn" id="prevBtn" aria-label="Previous page">← Previous</button>
+                    <span class="pagination-info" id="paginationInfo"></span>
+                    <button class="pagination-btn" id="nextBtn" aria-label="Next page">Next →</button>
+                </div>
+            </div>
+
+            <!-- Single Post View -->
+            <article class="essay" id="singlePost" style="display: none;">
+                <header class="essay-header">
+                    <button class="back-btn" id="backBtn" aria-label="Back to posts">← Back to Posts</button>
+                    <h1 class="essay-title" id="essayTitle"></h1>
+                    <div class="essay-meta">
+                        <span class="essay-date" id="essayDate"></span>
+                        <span class="essay-category" id="essayCategory"></span>
+                        <span class="essay-stats" id="essayStats"></span>
+                    </div>
+                </header>
+                
+                <div class="essay-content" id="essayContent">
+                    <!-- Essay content will be dynamically inserted here -->
+                </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" style="display: none;">
+        ↑
+    </button>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="complete-working-blog.js"></script> 
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
