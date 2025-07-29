@@ -1,4 +1,4 @@
-// Enhanced Blog JavaScript - Complete Working Version
+// Enhanced Blog JavaScript
 class EnhancedBlog {
     constructor() {
         this.posts = [];
@@ -21,43 +21,89 @@ class EnhancedBlog {
         this.setupKeyboardShortcuts();
     }
 
-    // Complete posts data with full content
+    // Sample posts data - in a real app, this would come from an API or JSON file
     loadPosts() {
         this.posts = [
             {
                 id: 1,
-                title: "Kompund Effecti",
+                title: "The Art of Digital Minimalism",
                 excerpt: "In an age of constant connectivity, finding balance between technology and human experience has become essential...",
-                content: `
-                    <p><strong>“Murakkab foiz — bu dunyoning sakkizinchi mo‘jizasi. Uni tushungan odam — daromad qiladi, tushunmagan esa — to‘laydi”</strong> deydi Albert Eynshteyn.</p>
-
-<p><strong>Compound interest</strong> (murakkab foizlar), bu qachon siz bir harakatni doimiy qilasiz va u ustma-ust o'sib boradi, buni geometrik o'sish desa ham bo'ladi. Oddiy o'sish quyidagicha bo'ladi: 1, 2, 3, 4, 5 ... va o'sish arifmetik o'sish deyiladi. <strong>Compound</strong> o'sishi esa 1, 2, 4, 8, 16 ... , ya'ni ko'proq foyda ustiga foyda. Agar ikkalasi doimiy holda o'sib borsa, compound interest yuqori natija ko'rsatadi. Natijasi faqat doimiy takrorlanganda ko'rinadi.</p>
-
-<p>Shunga o'xshab bizning ba'zi bir compound interest ga ega bo'lgan ishlarimiz bor, agar compound interestni yaxshilab tushunib, uni amalda doimiy qo'llasak, juda ham kuchli natijalarga olib keladi.</p>
-
-<h3>Compound interest ga ega bo'lgan harakatlar:</h3>
-
-<h4>O'rganish</h4>
-<p>Agar inson doimiy o'rganib borar ekan, uning bilimi plyus "+" kabi qo'shilmaydi, balki karra kabi ko'payadi. Va qachon u bir narsani o'rgansa, qolgan 10 ta narsaga ham aql yetib qoladi. Natijada, qaysi sohani odammi bo'lmasin, u bilan soatlab suhbat qura oladi, chunki unda compoundlashgan bilim bor. Lekin inson bunda to'xtab qolmasligi kerak, chunki to'xtasa pastga qulaydi. Naval Ravikant aytadi: <em>“Agar siz o‘rganmayotgan bo‘lsangiz, demak, yemirilyapsiz.”</em></p>
-
-<h4>Odatlar</h4>
-<p>Hozir qilayotgan har bir ishimiz, kelajakdagi bizdan dalolat beradi. Siz nima qilsangiz, siz o'sha siz (<em>you are what you do</em>). <strong>Atomic Habits</strong> kitobida keltiriladi: <em>“Maqsadingiz qanchalik yuksak bo‘lmasin, siz baribir o‘zingiz yaratgan odatlar va tizimlar darajasida harakat qilasiz.”</em> Agar bizning yomon odatlar doimiy qilinib kelinarkan, hozir natija bermas, lekin 5-10 yilda og'rig'i seziladi. Lekin agar kunda oz bo‘lsa ham 10 bet kitob, 10 daqiqa yozish, 20 daqiqa shug'ullanish, 5$ saqlab qo‘yish, 5 ta so‘z yodlash — 1 yilda natija ko‘rinishni boshlaydi, agar 3-5, mayli deylik 10 yil davom etsa, siz shunchaki ajralib chiqishni boshlaysiz. Bu esa boshqalar erishmagan natijalarga olib keladi. Suv tomib-tomib toshni yoradi dermidi?</p>
-
-<h4>Investitsiya</h4>
-<p>Ko‘pchilik investitsiya deganda faqat treyding yoki kriptani tushunadi. Ha, bu ham compound, lekin natija kafolatlanmagan, shunchaki 50/50. Biz esa o‘ziga investitsiya qilish haqida gaplashamiz. Siz investitsiyani, pullik kurslarga, til o‘rganishga, qimmat kitoblarga, book clublarga, networking meetinglarga, sog‘ligingizga, biznesga (biznes ham 50/50, yutqazsangiz ham kamida tajriba bilan chiqasiz, baribir foyda), va kerakli resurslarga qiling. Bu investitsiya shunaqa natijasini beradiki, shunchaki sizi hali hayolingizga kelmagan bo‘ladi.</p>
-
-<h4>Munosabatlarda</h4>
-<p>Har inson bilan qilayotgan muomalamiz, o‘z natijasini ko‘rsatmay qolmaydi. Siz qo‘lingizdan kelgancha odamlarga yordam berasiz, tabassum qilasiz va qo‘llab-quvvatlaysiz. Kuni kelib, sizga bir ishingizni hal qilish kerak bo‘lib qoladi, sizga tekinga xizmat ko‘rsatishadi, ish taklif qilib qolishadi va umuman hayolingizga kelmagan imkoniyatlar va yo‘llar ochila boshlaydi (<em>buni serendipity deydi</em>). Bir akamizni bilaman, pulsiz biznes boshlagan, sababi networkingi kuchli bo‘lgan. Lekin networking munosabatlarimiz orqali quriladi. Networkingni darajasi va sifati ham bor, shuni unutmaslik kerak.</p>
-
-<h4>Yozish</h4>
-<p>Qisqacha, yozish fikrni tiniq qiladi, doimiy yozib yurgan odam fikrini og‘zaki ravon yetkazadi va aniq fikrlaydi. Yozish sog‘liqqa ham foyda: stressdan olib chiqadi, tinchlantiradi, immunitetni yaxshilaydi va qon bosimini meyorida saqlaydi. Doimiy yozib yurgan odamning xotirasi kuchli bo‘ladi va yozgan bilimi miyyasiga tatuirovka bo‘lib qoladi (<em>writing is a tattoo on your brain</em>). Qisqacha deb, ancha yozvordim a?</p>
-
-<h3>Xulosa</h3>
-<p><strong>Compound interest</strong> odamni muvofaqqiyatga yetaklovchi asosiy omil hisoblanadi. Busiz umuman iloji yo‘q. “Allohga eng mahbub amal — oz bo‘lsa ham, doimiy qilinadigan amal.” (Imom Buxoriy va Muslim rivoyati).</p>
-
-                ``,
+                content: `<p>The digital age has brought unprecedented convenience and connectivity...</p>`,
+                category: "mindfulness",
                 date: "2024-01-15",
+                wordCount: 450,
+                readTime: 3
             },
+            {
+                id: 2,
+                title: "Creativity in the Age of Algorithms",
+                excerpt: "How artificial intelligence is reshaping creative expression...",
+                content: `<p>The rise of generative AI has sparked intense debate about the future of creativity...</p>`,
+                category: "creativity",
+                date: "2024-01-10",
+                wordCount: 380,
+                readTime: 2
+            },
+            {
+                id: 3,
+                title: "The Philosophy of Slow Technology",
+                excerpt: "Examining the movement toward more thoughtful, intentional technology design...",
+                content: `<p>In a world where technology companies compete for our attention...</p>`,
+                category: "technology",
+                date: "2024-01-05",
+                wordCount: 420,
+                readTime: 3
+            },
+            {
+                id: 4,
+                title: "Writing as a Form of Thinking",
+                excerpt: "How the act of writing transforms our thoughts and helps us discover what we truly believe...",
+                content: `<p>Hayotda muvaffaqiyatga erishish uchun muvozanatni topish juda muhim...</p>`,
+                category: "writing",
+                date: "2023-12-28",
+                wordCount: 350,
+                readTime: 2
+            },
+            {
+                id: 5,
+                title: "The Power of Perspective",
+                excerpt: "How changing our viewpoint can transform our understanding...",
+                content: `<p>Perspective is one of the most powerful tools we have for understanding the world...</p>`,
+                category: "perspective",
+                date: "2023-12-20",
+                wordCount: 400,
+                readTime: 3
+            },
+            {
+                id: 6,
+                title: "Reflection as a Daily Practice",
+                excerpt: "How regular reflection can transform our self-awareness, decision-making...",
+                content: `<p>In our fast-paced world, reflection often gets pushed aside...</p>`,
+                category: "reflection",
+                date: "2023-12-15",
+                wordCount: 450,
+                readTime: 3
+            },
+
+            {
+  id: 7,
+  title: "How to Think Clearly",
+  excerpt: "Tips on developing mental clarity and cutting through confusion...",
+  content: `
+    <p>Thinking clearly is not about being smart. It's about slowing down...</p>
+    <p>Here are 3 habits that help:</p>
+    <ul>
+      <li>Write your thoughts out</li>
+      <li>Sleep on big decisions</li>
+      <li>Ask better questions</li>
+    </ul>
+  `,
+  category: "thinking",
+  date: "2024-08-01",
+  wordCount: 420,
+  readTime: 3
+}
+
         ];
 
         this.filteredPosts = [...this.posts];
@@ -66,45 +112,33 @@ class EnhancedBlog {
 
     setupEventListeners() {
         const themeToggle = document.getElementById('themeToggle');
-        if (themeToggle) {
-            themeToggle.addEventListener('click', () => this.toggleTheme());
-        }
+        themeToggle.addEventListener('click', () => this.toggleTheme());
 
         const searchInput = document.getElementById('searchInput');
-const searchClear = document.getElementById('searchClear');
+        const searchClear = document.getElementById('searchClear');
 
-if (searchInput) {
-    searchInput.addEventListener('input', (e) => {
-        this.searchQuery = e.target.value.toLowerCase();
-        // FILTER *as you type*, immediately!
-        this.filterPosts();
-    });
-}
-
-if (searchClear) {
-    searchClear.addEventListener('click', () => {
         if (searchInput) {
-            searchInput.value = '';
+            searchInput.addEventListener('input', (e) => {
+                this.searchQuery = e.target.value.toLowerCase();
+                this.filterPosts();
+            });
         }
-        this.searchQuery = '';
-        this.filterPosts();
-    });
-}
 
+        if (searchClear) {
+            searchClear.addEventListener('click', () => {
+                if (searchInput) {
+                    searchInput.value = '';
+                }
+                this.searchQuery = '';
+                this.filterPosts();
+            });
+        }
 
-
-        // CRITICAL: Setup sidebar navigation links to show individual posts
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
+        const categoryLinks = document.querySelectorAll('.nav-link');
+        categoryLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
-                const postTitle = link.dataset.title;
-                if (postTitle) {
-                    this.showSinglePostByTitle(postTitle);
-                    // Update active state
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    link.classList.add('active');
-                }
+                this.setActiveCategory(e.target.dataset.category);
             });
         });
 
@@ -196,10 +230,7 @@ if (searchClear) {
         this.currentCategory = category;
         this.currentPage = 1;
         document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-        const categoryLink = document.querySelector(`[data-category="${category}"]`);
-        if (categoryLink) {
-            categoryLink.classList.add('active');
-        }
+        document.querySelector(`[data-category="${category}"]`).classList.add('active');
         this.filterPosts();
     }
 
@@ -248,19 +279,23 @@ if (searchClear) {
         }
 
         postsGrid.innerHTML = currentPosts.map(post => `
-    <article class="post-card" data-post-id="${post.id}">
-        <h3 class="post-title">${post.title}</h3>
-        <p class="post-excerpt">${post.excerpt}</p>
-        <div class="post-meta">
-            <span>${this.formatDate(post.date)}</span>
-        </div>
-    </article>
-`).join('');
+            <article class="post-card" data-post-id="${post.id}">
+                <h3 class="post-title">${post.title}</h3>
+                <p class="post-excerpt">${post.excerpt}</p>
+                <div class="post-meta">
+                    <span>${this.formatDate(post.date)}</span>
+                    <span>${post.category}</span>
+                </div>
+                <div class="post-stats">
+                    <span>${post.wordCount} words</span>
+                    <span>${post.readTime} min read</span>
+                </div>
+            </article>
+        `).join('');
 
-        // Add click event listeners to each post-card to show the full essay
         postsGrid.querySelectorAll('.post-card').forEach(card => {
             card.addEventListener('click', () => {
-                const postId = parseInt(card.getAttribute('data-post-id'), 10);
+                const postId = parseInt(card.dataset.postId);
                 this.showSinglePost(postId);
             });
         });
@@ -309,14 +344,6 @@ if (searchClear) {
         }
     }
 
-    // CRITICAL: Method to show post by title (for sidebar navigation)
-    showSinglePostByTitle(title) {
-        const post = this.posts.find(p => p.title === title);
-        if (post) {
-            this.showSinglePost(post.id);
-        }
-    }
-
     showSinglePost(postId) {
         const post = this.posts.find(p => p.id === postId);
         if (!post) return;
@@ -334,8 +361,8 @@ if (searchClear) {
 
         if (essayTitle) essayTitle.textContent = post.title;
         if (essayDate) essayDate.textContent = this.formatDate(post.date);
-        if (essayCategory) essayCategory.textContent = '';
-        if (essayStats) essayStats.textContent = '';
+        if (essayCategory) essayCategory.textContent = post.category;
+        if (essayStats) essayStats.textContent = `${post.wordCount} words • ${post.readTime} min read`;
         if (essayContent) essayContent.innerHTML = post.content;
 
         window.history.pushState({ postId }, '', `#post-${postId}`);
@@ -347,10 +374,6 @@ if (searchClear) {
         const postsContainer = document.getElementById('postsContainer');
         if (singlePost) singlePost.style.display = 'none';
         if (postsContainer) postsContainer.style.display = 'block';
-        
-        // Clear active state from sidebar links
-        document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-        
         window.history.pushState({}, '', window.location.pathname);
     }
 
@@ -364,17 +387,11 @@ if (searchClear) {
     }
 
     showLoading() {
-        const loadingSpinner = document.getElementById('loadingSpinner');
-        if (loadingSpinner) {
-            loadingSpinner.style.display = 'flex';
-        }
+        document.getElementById('loadingSpinner').style.display = 'flex';
     }
 
     hideLoading() {
-        const loadingSpinner = document.getElementById('loadingSpinner');
-        if (loadingSpinner) {
-            loadingSpinner.style.display = 'none';
-        }
+        document.getElementById('loadingSpinner').style.display = 'none';
     }
 }
 
@@ -391,4 +408,4 @@ window.addEventListener('popstate', (event) => {
     } else {
         blog?.showPostsList();
     }
-});
+}); working
